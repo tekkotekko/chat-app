@@ -15,14 +15,43 @@
   height: 100px;
   width: 100%;
   padding: 0 20px;
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.head-side-left a{
+  color: #FAFAFA;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.head-side-right a{
+  padding: 14px;
+  font-size: 10px;
+  color: deepskyblue;
+  border: 1px solid lightblue;
+  text-decoration: none;
+}
+
 
 .room-list{
   background-color: #2F3E51;
   height: calc(100% - 100px);
   width: 100%;
   padding: 0 20px;
+  overflow: scroll;
+}
+
+.room{
+  padding: 20px 0 40px;
+  /* border: 1px solid white; */
+}
+
+
+.room-name a{
+  text-decoration: none;
+  color: white;
 }
 
 .main-chat{
