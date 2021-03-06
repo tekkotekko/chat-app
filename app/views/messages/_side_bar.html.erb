@@ -1,6 +1,6 @@
 <div class="head-side">
   <div class="head-side-left">
-    <a href="#" class="user-name">tekkotekko</a>
+    <%= link_to "#{current_user.name}", edit_user_path(current_user), class:"user-name" %>
   </div>
   <div class="head-side-right">
     <a href="#" class="make-chat">チャットを作成する</a>
