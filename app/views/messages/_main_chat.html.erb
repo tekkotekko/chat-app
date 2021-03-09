@@ -11,60 +11,7 @@
   </div>
 </div>
 <div class="middle-chat">
-  <div class="message">
-    <ul class="message-name-date">
-      <li class="name">Tom</li>
-      <li class="date">2020/3/31(Wed) 12:43:30</li>
-    </ul>
-    <div class="message-text">
-      おはよう
-    </div>
-  </div>
-  <div class="message">
-    <ul class="message-name-date">
-      <li class="name">Sim</li>
-      <li class="date">2020/3/31(Wed) 12:43:30</li>
-    </ul>
-    <div class="message-text">
-      こんばんは
-    </div>
-  </div>
-  <div class="message">
-    <ul class="message-name-date">
-      <li class="name">Sim</li>
-      <li class="date">2020/3/31(Wed) 12:43:30</li>
-    </ul>
-    <div class="message-text">
-      こんばんは
-    </div>
-  </div>
-  <div class="message">
-    <ul class="message-name-date">
-      <li class="name">Sim</li>
-      <li class="date">2020/3/31(Wed) 12:43:30</li>
-    </ul>
-    <div class="message-text">
-      こんばんは
-    </div>
-  </div>
-  <div class="message">
-    <ul class="message-name-date">
-      <li class="name">Sim</li>
-      <li class="date">2020/3/31(Wed) 12:43:30</li>
-    </ul>
-    <div class="message-text">
-      こんばんは
-    </div>
-  </div>
-  <div class="message">
-    <ul class="message-name-date">
-      <li class="name">Sim</li>
-      <li class="date">2020/3/31(Wed) 12:43:30</li>
-    </ul>
-    <div class="message-text">
-      こんばんは
-    </div>
-  </div>
+  <%= render partial: "message", collection: @messages %>
 </div>
 <%= form_with model: [@room, @message], class: "bottom-chat", local: true do |f| %>
   <div class="message-form">
