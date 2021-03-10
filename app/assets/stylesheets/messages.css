@@ -192,3 +192,7 @@
   padding: 0 20px;
   border: none;
 }
+
+.field_with_errors{
+  display: contents;
+}
